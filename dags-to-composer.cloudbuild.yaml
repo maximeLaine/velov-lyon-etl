@@ -20,3 +20,15 @@ steps:
   - name: python
     entrypoint: python
     args: ["utils/add_dags_to_composer.py", "--dags_directory=${_DAGS_DIRECTORY}", "--dags_bucket=${_DAGS_BUCKET}"]
+
+  # run
+  - name: python
+    entrypoint: python
+    args: [ "utils/add_dags_to_composer.py", "--dags_directory=${_SRC_DIRECTORY}", "--dags_bucket=${_DAGS_BUCKET}" ]
+
+
+  # run
+  - name: python
+    entrypoint: python
+    args: [ "utils/add_dags_to_composer.py", "--dags_directory=${_UTILS_DIRECTORY}", "--dags_bucket=${_DAGS_BUCKET}" ]
+
