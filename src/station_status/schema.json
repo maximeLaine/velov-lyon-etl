@@ -1,0 +1,69 @@
+[
+    {
+        "name": "station_id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "num_bikes_available",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "num_bikes_disabled",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "num_docks_available",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "num_docks_disabled",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "is_installed",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "is_renting",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "is_returning",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "last_reported",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "capacity",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+    },
+    {
+      "name": "vehicle_types_available",
+      "type": "RECORD",
+      "mode": "REPEATED",
+      "fields": [
+        {
+          "name": "vehicle_type_id",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "count",
+          "type": "INTEGER",
+          "mode": "NULLABLE"
+        }
+      ]
+    }
+]
