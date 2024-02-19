@@ -8,9 +8,9 @@ def load_bq_station_information():
     now = datetime.now()
     date_format = now.strftime('%Y-%m-%d-%H')
 
-    table_id = f"velov-lyon-etl.ods.station-information"
+    table_id = f"velov-etl-project.ods.station-information"
 
-    uri = f"gs://velov-bucket-etl/station-information/{date_format}.json"
+    uri = f"gs://bucket-velov-etl/station-information/{date_format}.json"
     schema_table_path = f"src/station_information/schema.json"
 
     load_to_bq(table_id, uri, schema_table_path)

@@ -4,7 +4,9 @@ from google.cloud import bigquery
 def load_to_bq(table_id, uri, schema_table_path):
 #def load_to_bq():
     # Construct a BigQuery client object.
-    client = bigquery.Client()
+
+    client = bigquery.Client.from_service_account_json('./utils_gcp/credentials.json')
+    # client = bigquery.Client()
 
     # variable test
     # table_id ="velov-lyon-etl.ods.station-information"

@@ -44,7 +44,7 @@ def extract_json_station_information():
 
     # Upload the file into a bucket GCP
     bucket_filename = f'station-information/{date_format}.json'
-    upload_blob('velov-bucket-etl', f'./data/{filename}', bucket_filename)
+    upload_blob('bucket-velov-etl', f'./data/{filename}', bucket_filename)
 
     # Remove the local file
     os.remove(f'./data/{filename}')
