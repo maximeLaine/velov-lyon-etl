@@ -38,16 +38,16 @@ def extract_json_station_information():
     json_newline = "\n".join(limit_json)
 
     # Save in local JSON file the transformations done
-    f = open(f'./data/{filename}', 'w')
+    f = open(f'/home/airflow/gcs/data/{filename}', 'w')
     f.write(json_newline)
     f.close()
 
     # Upload the file into a bucket GCP
     bucket_filename = f'station-information/{date_format}.json'
-    upload_blob('bucket-velov-etl', f'./data/{filename}', bucket_filename)
+    upload_blob('bucket-velov-etl', f'/home/airflow/gcs/data/{filename}', bucket_filename)
 
     # Remove the local file
-    os.remove(f'./data/{filename}')
+    os.remove(f'/home/airflow/gcs/data/{filename}')
 
 
 if __name__ == "__main__":

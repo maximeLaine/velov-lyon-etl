@@ -1,6 +1,5 @@
 from google.cloud import storage
 
-
 def upload_blob(bucket_name, source_file_name, destination_blob_name):
     """Uploads a file to the bucket."""
     # The ID of your GCS bucket
@@ -10,8 +9,8 @@ def upload_blob(bucket_name, source_file_name, destination_blob_name):
     # The ID of your GCS object
     # destination_blob_name = "storage-object-name"
 
-    storage_client = storage.Client.from_service_account_json('./utils_gcp/credentials.json')
-   # storage_client = storage.Client(project='velov-etl-project')
+    #storage_client = storage.Client.from_service_account_json('gs://europe-west1-velov-etl-clou-f4aa3884-bucket/dags/utils_gcp/credentials.json')
+    storage_client = storage.Client()
     bucket = storage_client.bucket(bucket_name)
     blob = bucket.blob(destination_blob_name)
 

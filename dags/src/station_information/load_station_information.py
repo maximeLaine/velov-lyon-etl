@@ -11,7 +11,7 @@ def load_bq_station_information():
     table_id = f"velov-etl-project.ods.station-information"
 
     uri = f"gs://bucket-velov-etl/station-information/{date_format}.json"
-    schema_table_path = f"src/station_information/schema.json"
+    schema_table_path = "/home/airflow/gcs/dags/src/station_information/schema.json"
 
     load_to_bq(table_id, uri, schema_table_path)
 
