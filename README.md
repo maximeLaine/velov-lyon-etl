@@ -8,6 +8,7 @@ This code create a ETL on GCP.
 
 ## Schema of the project
 
+![alt text](https://github.com/maximeLaine/velov-lyon-etl/blob/main/schema.png)
 
 
 
