@@ -1,7 +1,7 @@
 from google.cloud import bigquery
 
 
-def load_json_to_bq(table_id, uri, schema_table_path):
+def load_csv_to_bq(table_id, uri, schema_table_path):
 
     # Construct a BigQuery client object.
     client = bigquery.Client()
