@@ -1,0 +1,92 @@
+[
+  {
+      "name": "FID",
+      "type": "STRING",
+      "mode": "NULLABLE"
+  },
+  {
+      "name": "name",
+      "type": "STRING",
+      "mode": "NULLABLE"
+  },
+  {
+      "name": "adresse",
+      "type": "STRING",
+      "mode": "NULLABLE"
+  },
+  {
+      "name": "commune",
+      "type": "STRING",
+      "mode": "NULLABLE"
+  },
+  {
+      "name": "codeinsee",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+  },
+  {
+      "name": "avancement",
+      "type": "STRING",
+      "mode": "NULLABLE"
+  },
+  {
+    "name": "gestionnaire",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+      "name": "mobiliervelo",
+      "type": "STRING",
+      "mode": "NULLABLE"
+  },
+  {
+      "name": "localisation",
+      "type": "STRING",
+      "mode": "NULLABLE"
+  },
+  {
+      "name": "abrite",
+      "type": "BOOLEAN",
+      "mode": "NULLABLE"
+  },
+  {
+      "name": "duree",
+      "type": "STRING",
+      "mode": "NULLABLE"
+  },
+  {
+      "name": "nbarceaux",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+  },
+  {
+      "name": "anneerealisation",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+  },
+  {
+      "name": "arceauxprojetes",
+      "type": "STRING",
+      "mode": "NULLABLE"
+  },
+  {
+      "name": "pole",
+      "type": "STRING",
+      "mode": "NULLABLE"
+  },
+  {
+      "name": "validite",
+      "type": "STRING",
+      "mode": "NULLABLE"
+  },
+  {
+      "name": "gid",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+  },
+  {
+      "name": "the_geom",
+      "type": "STRING",
+      "mode": "NULLABLE"
+  }
+]

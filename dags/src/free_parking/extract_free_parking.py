@@ -24,7 +24,7 @@ def extract_csv_free_parking():
     df.to_csv(f'/home/airflow/gcs/data/{filename}')
 
     # Upload the file into a bucket GCP
-    bucket_filename = f'free-parking/{date_format}.json'
+    bucket_filename = f'free-parking/{date_format}.csv'
     upload_blob('bucket-velov-etl', f'/home/airflow/gcs/data/{filename}', bucket_filename)
 
     # Remove the local file
