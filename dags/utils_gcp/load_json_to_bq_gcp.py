@@ -1,20 +1,10 @@
 from google.cloud import bigquery
 
 
-def load_to_bq(table_id, uri, schema_table_path):
-#def load_to_bq():
-    # Construct a BigQuery client object.
-
-    # client = bigquery.Client.from_service_account_json(f'{dags_path}/utils_gcp/credentials.json')
+def load_json_to_bq(table_id, uri, schema_table_path):
     client = bigquery.Client()
 
-    # variable test
-    # table_id ="velov-lyon-etl.ods.station-information"
-    # uri = f"gs://velov-bucket-etl/station-information/2024-02-15-16.json"
-    # schema_table_path = "src/station_information/schema.json"
-
     schema_dict = client.schema_from_json(schema_table_path)
-
 
     job_config = bigquery.LoadJobConfig(
         source_format=bigquery.SourceFormat.NEWLINE_DELIMITED_JSON,

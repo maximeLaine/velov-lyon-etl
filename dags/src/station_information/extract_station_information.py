@@ -15,10 +15,7 @@ def extract_json_station_information():
     # Get the last refresh data
     now = datetime.now()
     date_format = now.strftime('%Y-%m-%d-%H')
-    # date = datetime.fromtimestamp(df['last_updated']['stations'] / 1e3)
-    # date_format = date.strftime('%Y-%m-%d-%H')
 
-    # print(type(data))
     filename = f'station_information-{date_format}.json'
 
     # Get the data in the JSON file
